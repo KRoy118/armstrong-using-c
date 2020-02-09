@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{int n,d,r=0,e=0;
+scanf("%d",&n);
+d=n;
+while(n!=0)
+{
+e=n%10;
+r=r+(e*e*e);
+n=n/10;
+}
+if(r==d)
+printf("Armstrong");
+else
+printf("not armstrong");
+}
+
